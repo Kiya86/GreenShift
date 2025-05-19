@@ -128,3 +128,29 @@ function initSections() {
 
 // Call initialization function when main content is shown
 enterBtn.addEventListener('click', initSections);
+
+// Video Play Button Functionality
+const videoContainers = document.querySelectorAll('.video-container');
+
+videoContainers.forEach(container => {
+    const video = container.querySelector('video');
+    const overlay = container.querySelector('.video-overlay');
+    
+    if (video && overlay) {
+        // Click overlay to play
+        overlay.addEventListener('click', () => {
+            video.play();
+            container.classList.add('playing');
+        });
+        
+        // Show overlay when video is paused
+        video.addEventListener('pause', () => {
+            container.classList.remove('playing');
+        });
+        
+        // Hide overlay when video is playing
+        video.addEventListener('play', () => {
+            container.classList.add('playing');
+        });
+    }
+});
