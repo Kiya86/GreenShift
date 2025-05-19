@@ -322,15 +322,22 @@ nav {
     margin: 3rem 0;
 }
 
+/* Updated Video Styles */
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    max-width: 800px;
+    margin: 0 auto 2rem;
     background-color: var(--darker-bg);
-    margin-bottom: 2rem;
 }
 
-.video-placeholder {
+.video-container video {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--primary-color);
+}
+
+.video-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -341,18 +348,24 @@ nav {
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    background: rgba(0,0,0,0.3);
     cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
-.video-placeholder i {
+.video-overlay i {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.video-placeholder p {
+.video-overlay p {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
+}
+
+.video-container.playing .video-overlay {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .slogan-rationale {
