@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShift - Paint the World Green</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="active">
+        <div id="terminal-text"></div>
+        <button id="enter-btn" class="hidden">ENTER GREENSHIFT >></button>
+    </div>
+
+    <!-- Main Website Content (hidden initially) -->
+    <div id="main-content" class="hidden">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo-container">
+                <img src="images/ML.png" alt="GreenShift Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#purpose">Purpose</a></li>
+                <li><a href="#team">Meet The Team</a></li>
+                <li><a href="#campaign">Campaign</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="images/BL.png" alt="GreenShift Large Logo" class="hero-logo">
+                <h1>A NEW EARTH STARTS WITH YOU</h1>
+                <p>Paint the World Green!</p>
+            </div>
+        </section>
+
+        <!-- Purpose Statement Section -->
+        <section id="purpose" class="section purpose-section">
+            <div class="section-content">
+                <h2>OUR PURPOSE</h2>
+                <p>Our purpose is to reduce carbon emissions while improving urban life by integrating nature into our cities. By introducing plants into our cities, we will provide shade to combat the heat and create shelter for local wildlife. We also aim to raise awareness about deforestation as we strive to preserve ecosystems and maintain our connection with nature. Furthermore, we also work toward removing harmful waste such as trash from the oceans, forests, lakes, and other habitats. We want to protect and restore the environment we all depend on. </p>
+                <div class="visual-rhetoric">
+                    <img src="images/Rhetoric.png" alt="Environmental Impact Infographic">
+                    <div class="rationale">
+                        <h3>Visual Rhetoric Rationale</h3>
+                        <p>The visualization is meant to show how the Earth will become polluted and uninhabitable if no change is initiated. There are visual components such as trash, dried trees, fish stuck in plastic, and the Earth pulloted. This is all meant to show how the Earth is being affected. On the right, GreenShift has converted this image of a polluted planet to a green, livable planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet The Team Section -->
+        <section id="team" class="section team-section">
+            <div class="section-content">
+                <h2>MEET THE TEAM</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="headshot" style="background-image: url('images/Kiya.png');"></div>
+                        <h3>Kiyarash Shahriari Kesheh</h3>
+                        <p class="role">Founder & CEO</p>
+                        <p class="bio">Environmental scientist with years experience.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="headshot" style="background-image: url('images/Nikita.png');"></div>
+                        <h3>Nikita Petylo</h3>
+                        <p class="role">Treasurer</p>
+                        <p class="bio">Organizes fundraisers for our cause!</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="headshot" style="background-image: url('images/Adrian.png');"></div>
+                        <h3>Adrian Mendoza</h3>
+                        <p class="role">Chief Engineer</p>
+                        <p class="bio">Developer of the GreenShift carbon tracking app with 500,000+ active users.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="headshot" style="background-image: url('images/Max.png');"></div>
+                        <h3>Max Kuznietsov</h3>
+                        <p class="role">Secondary Engineer</p>
+                        <p class="bio">Co-Developer of the GreenShift carbon tracking app.</p>
+                    </div>                
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaign Section -->
+        <section id="campaign" class="section campaign-section">
+            <div class="section-content">
+                <h2>OUR CAMPAIGN</h2>
+                <div class="multimedia-rhetoric">
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                            <p>WATCH OUR CAMPAIGN VIDEO</p>
+                        </div>
+                    </div>
+                    <div class="rationale">
+                        <h3>Multimedia Rhetoric Rationale</h3>
+                        <p>Our video juxtaposes images of environmental degradation with solutions, creating emotional contrast. Testimonials from diverse individuals build ethos, while on-screen statistics appeal to logos. The recurring motif of small actions building to big change reinforces our slogan.</p>
+                    </div>
+                </div>
+                <div class="slogan-rationale">
+                    <h3>Slogan Rationale</h3>
+                    <p>"Paint the World Green" is meant to represent our mission to promote environmental awareness and inspire action to create a better future for all. The slogan was chosen as it symbolized growth and the power of collective change to make the world a greener place. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <img src="images/ML.png" alt="GreenShift Small Logo" class="footer-logo">
+            <p>© 2025 GreenShift. All rights reserved.</p>
+            <p>Join the movement for a new, green earth.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
